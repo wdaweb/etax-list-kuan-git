@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>統一發票紀錄</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>統一發票紀錄與對獎</h1>
+    <div class="navbar">
+        <li><a href="invoice_list.php">當期發票</a></li>
+        <li><a href="query_award.php">對獎</a></li>
+        <li><a href="award_num.html">輸入獎號</a></li>
+    </div>
+    <div class="invform">
+        <form action="./recevie.php" method="post">
+            <label>
+                年份：<input type="text" name="year" id="year"><br>
+                月份：<input type="text" name="month" id="month">
+            </label>
+            <label>
+                發票號碼：<input type="text" name="code" id="code">
+            <input type="number" name="number" id="number">
+            </label>
+            <label>
+                發票金額：<input type="number" name="expend" id="expend">
+            </label>
+            <label>
+                <input type="submit" value="送出">
+            </label>
+
+        </form>
+    </div>
+</body>
+</html>
